@@ -1,0 +1,27 @@
+/* Style index to max-width: 768px */
+
+@media only screen and (max-width: 768px) {
+  #presentation .container {
+    background-image: unset;
+  }
+
+  #portfolio .project-item {
+    flex-direction: row;
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #portfolio .all-projects .project-info {
+    height: 100%;
+  }
+  #portfolio .all-projects .project-img {
+    height: 100%;
+  }
+  #portfolio .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #portfolio .header .gotopbtn {
+    display: none;
+  }
+}
