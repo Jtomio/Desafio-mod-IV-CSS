@@ -48,13 +48,13 @@ p {
   position: fixed;
   width: 50px;
   height: 50px;
-  background: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+  background: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
   bottom: 40px;
   right: 50px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
-  color: #fff;
+  color: #f2f4f2;
   font-size: 22px;
   border-radius: 50%;
 }
@@ -63,83 +63,38 @@ p {
 }
 /* Seção de apresentação */
 #presentation {
-  background-image: url(Images/img-size.png);
-  background-size: cover;
+  background-image: url(Images/img-chk-back.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
+  background-color: #eaeef3;
   z-index: 1;
 }
-#presentation h1 {
-  display: block;
-  width: 80%;
-  font-size: 5rem;
-  position: relative;
-  color: transparent;
-  animation: text_reveal 0.5s forwards;
-  animation-delay: 1.5s;
-  margin-left: 110%;
-}
-#presentation h1:nth-child(1) {
-  animation-delay: 0.8s;
-}
-#presentation h1:nth-child(2) {
-  animation-delay: 1.8s;
-}
-#presentation h1:nth-child(3) {
-  animation: text_reveal_name 0.5s ease forwards;
-  animation-delay: 2.8s;
-}
-#presentation .cta {
+.presentation .cta {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
   padding: 10px 10px;
-  color: rgb(4, 0, 255);
+  margin-top: 60%;
   background-color: transparent;
-  border: 2px solid rgb(4, 0, 255);
-  font-size: 2rem;
+  border: 2px solid #254c94;
+  border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 110%;
+  margin-top: 80%;
   transition: 0.5s ease;
   transition-property: background-color, color;
+  color: #254c94;
 }
 #presentation .cta:hover {
   color: white;
   font-weight: 500;
-  background-color: gold;
-  border: 2px solid gold;
+  background-color: #f4c404;
+  border: 2px solid #f4c404;
+  border-radius: 10px;
 }
-#presentation h1 span {
-  position: absolute;
-  color: rgb(4, 0, 255);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  animation: text_reveal_box 1s ease;
-  animation-delay: 0.5s;
-  background-color: gold;
-}
-#presentation h1:nth-child(1) span {
-  animation-delay: 0.5s;
-}
-#presentation h1:nth-child(2) span {
-  animation-delay: 1.5s;
-}
-#presentation h1:nth-child(3) span {
-  animation-delay: 2.5s;
-}
-#presentation::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.1;
-  z-index: -1;
-}
+
 
 /* Seção de Portifólio */
 
@@ -176,8 +131,8 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
-  color: white;
+  background-image: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
+  color: #f2f4f2;
 }
 #portfolio .project-info h1 {
   font-size: 4rem;
@@ -189,7 +144,7 @@ p {
   margin-top: 10px;
 }
 #portfolio .project-info p {
-  color: #fff;
+  color: #f2f4f2;
 }
 #portfolio .project-img {
   flex-basis: 50%;
@@ -220,7 +175,7 @@ p {
   align-items: center;
   min-height: 100vh;
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .preferencia p {
@@ -230,7 +185,7 @@ p {
   color: black;
 }
 .pref-container {
-  background: rebeccapurple;
+  background: #254c94;
   position: relative;
   width: 100%;
   display: flex;
@@ -267,7 +222,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+  background: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
@@ -295,7 +250,7 @@ p {
   align-items: flex-end;
 }
 .pref-container .pref-box .pref-content h2 {
-  color: #fff;
+  color: #f2f4f2;
   transition: 0.5s;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -307,7 +262,7 @@ p {
   transition-delay: 0.5s;
 }
 .pref-container .pref-box .pref-content p {
-  color: #fff;
+  color: #f2f4f2;
   transform: translateY(280px);
   transition: 0.5s;
   font-size: 14px;
@@ -358,7 +313,7 @@ p {
   width: 500px;
   max-width: 98%;
   border-radius: 10px;
-  background: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+  background: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
   list-style: none;
   overflow: hidden;
   color: black !important;
@@ -369,7 +324,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #fff;
+  color: #f2f4f2;
   font-size: 18px;
   font-weight: 700;
   width: 100%;
@@ -378,8 +333,8 @@ p {
   margin: 0px;
   padding: 0px;
   position: relative;
-  background: #ecf0f1;
-  border-bottom: 1px solid #ecf0f1;
+  background: #a0b2d1;
+  border-bottom: 1px solid #a0b2d1;
 }
 .list .list-item:last-child {
   border: 0px;
@@ -455,7 +410,7 @@ p {
 /* slider imgs*/
 
 .slider {
-  background: linear-gradient(60deg, #5a10b5 0%, #3996fa 100%);
+  background: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -479,7 +434,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #fff;
+  color: #f2f4f2;
   font-size: 40px;
   padding: 30px;
 }
@@ -487,7 +442,7 @@ p {
 footer {
   position: relative;
   width: 100%;
-  background: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+  background: linear-gradient(60deg, #8caccc 0%,#254c94 100%);
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -541,12 +496,12 @@ footer p {
 
 @keyframes text_reveal {
   100% {
-    color: rgb(25, 48, 252);
+    color: #254c94;
   }
 }
 @keyframes text_reveal_name {
   100% {
-    color: rgb(25, 48, 252);
+    color: #254c94;
     font-weight: 500px;
   }
 }
